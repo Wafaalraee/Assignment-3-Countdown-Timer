@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/style.css">
+    <title>countdown Timer</title>
+</head>
+
+<body>
+    <div class="background-image">
+        <div class="countdown-container">
+            <div id="countdown"></div>
+        </div>
+    </div>
+    <div class="timer-container">
+        <div id="timer">25:00</div>
+        <div class="controls">
+            <div class="duration-controls">
+                <button onclick="adjustDuration('session', -1)">-</button>
+                <span>Session <span id="sessionDuration"></span></span>
+                <button onclick="adjustDuration('session', 1)">+</button>
+            </div>
+            <div class="duration-controls">
+                <button onclick="adjustDuration('break', -1)">-</button>
+                <span>Break <span id="breakDuration"></span></span>
+                <button onclick="adjustDuration('break', 1)">+</button>
+            </div>
+        </div>
+        <div class="buttons">
+            <button onclick="startTimer()">Start</button>
+            <button onclick="stopTimer()">Stop</button>
+            <button onclick="resetTimer()">Reset</button>
+           
+        </div>
+
+        <!-- Corrected placement of the closing </div> tag -->
+    </div>
+
+
+    <audio id="notificationSound" src="sound/wind-chimes-bells-115747 (2).mp3"></audio>
+
+    <script src="script.js"></script>
+</body>
+</html>
+
+
+
+
+
